@@ -65,7 +65,7 @@ namespace SymWin
          { Key.Multiply, Tuple.Create(new[] { '×' }, new[] { '×' })},
          { Key.OemOpenBrackets, _sEmpty }, // = Oem4
          { Key.Oem8, _sEmpty },
-         { Key.OemQuestion, Tuple.Create(new[] { '¿'}, new[] { '¿' })},
+         { Key.OemQuestion, Tuple.Create(new[] { '_', '¿' }, new[] { '_', '¿' })},
          { Key.OemBackslash, _sEmpty }, // Equals 102
          { Key.OemMinus, _sEmpty },
          { Key.OemPipe, Tuple.Create(new[] { '¦' }, new[] { '¦' }) },
