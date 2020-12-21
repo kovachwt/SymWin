@@ -1082,6 +1082,8 @@ namespace SymWin.Keyboard
                var left = _sActiveSelectorWindow.Left;
                var top = _sActiveSelectorWindow.Top;
 
+               _SendSelectedLetterAsKeyPress();
+
                _HidePopup();
 
                if (!LetterMappings.KeyToWindowMap.TryGetValue(e.Key, out _sActiveSelectorWindow))

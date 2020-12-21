@@ -25,8 +25,8 @@ namespace SymWin
          { Key.C, Tuple.Create(new[] { 'ç', '©' },
                                new[] { 'Ç', '©' })},
 
-         { Key.D, Tuple.Create(new[] { 'δ' },
-                               new[] { 'Δ' })},
+         { Key.D, Tuple.Create(new[] { 'D', 'δ' },
+                               new[] { 'D', 'Δ' })},
 
          { Key.E, Tuple.Create(new[] { 'ѐ', 'é', 'ë', 'ê', 'ε', 'ð', 'η' },
                                new[] { 'Ѐ', 'É', 'Ë', 'Ê', 'Ε', 'Ð', 'Η' })},
@@ -92,7 +92,7 @@ namespace SymWin
                                new[] { 'Ζ' })},
 
          // Numbers
-         { Key.D0, Tuple.Create(new[] { '☺', '☻', '∞', 'ø' }, new[]  { '☺', '☻', '∞', 'Ø' })},
+         { Key.D0, Tuple.Create(new[] { ')', '☺', '☻', '∞', 'ø' }, new[]  { ')', '☺', '☻', '∞', 'Ø' })},
          { Key.D1, Tuple.Create(new[] { '¡', '‼', '¹' }, new[] { '¡', '‼', '¹' })},
          { Key.D2, Tuple.Create(new[] { '²', '½', '√' }, new[] { '²', '½', '√' })},
          { Key.D3, Tuple.Create(new[] { '⅓', '³', '§' }, new[] { '⅓', '³', '§' })},
@@ -101,8 +101,8 @@ namespace SymWin
          { Key.D6, Tuple.Create(new[] { '^' }, new[] { '^' })},
          { Key.D8, Tuple.Create(new[] { '★', '✼', '❀' }, new[] { '★', '✼', '❀' })},
 
-         { Key.D9, Tuple.Create(new[] { '☹' }, new[] { '☹' })},
-         { Key.OemCloseBrackets, Tuple.Create(new[] { '☹' }, new[] { '☹' })},
+         { Key.D9, Tuple.Create(new[] { '(', '☹' }, new[] { '(', '☹' })},
+         { Key.OemCloseBrackets, Tuple.Create(new[] { ']', '☹' }, new[] { ']', '☹' })},
 
          { Key.Divide, Tuple.Create(new[]  {'÷'}, new[]  {'÷'})},
          { Key.OemQuotes, Tuple.Create(new[] { '«', '»'}, new[] { '«', '»'})},
@@ -112,13 +112,13 @@ namespace SymWin
 
          { Key.Decimal, _sEmpty },
          { Key.Multiply, Tuple.Create(new[] { '×' }, new[] { '×' })},
-         { Key.OemOpenBrackets, _sEmpty }, // = Oem4
+         { Key.OemOpenBrackets, Tuple.Create(new[] { '[' }, new[] { '[' }) }, // = Oem4
          { Key.Oem8, _sEmpty },
          { Key.OemQuestion, Tuple.Create(new[] { '_', '¿'}, new[] { '_', '¿' })},
          { Key.OemBackslash, _sEmpty }, // Equals 102
          { Key.OemMinus, _sEmpty },
          { Key.OemPipe, Tuple.Create(new[] { '¦' }, new[] { '¦' }) },
-         { Key.OemSemicolon, _sEmpty }, // = Oem1 = Oem102
+         { Key.OemSemicolon, Tuple.Create(new[] { ':' }, new[] { ':' }) }, // = Oem1 = Oem102
          { Key.OemTilde, _sEmpty },
          { Key.Subtract, _sEmpty },
       };
