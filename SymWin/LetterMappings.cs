@@ -98,6 +98,7 @@ namespace SymWin
          { Key.D3, Tuple.Create(new[] { '⅓', '³', '§' }, new[] { '⅓', '³', '§' })},
          { Key.D4, Tuple.Create(new[] { '£', '¥', '$', '€', '¤', '¼' }, new[] { '£', '¥', '$', '€', '¤', '¼' })},
          { Key.D5, Tuple.Create(new[] { '‰', '⅕', '♫', '♪' }, new[] { '‰', '⅕', '♫', '♪' })},
+         { Key.D6, Tuple.Create(new[] { '^' }, new[] { '^' })},
          { Key.D8, Tuple.Create(new[] { '★', '✼', '❀' }, new[] { '★', '✼', '❀' })},
 
          { Key.D9, Tuple.Create(new[] { '☹' }, new[] { '☹' })},
